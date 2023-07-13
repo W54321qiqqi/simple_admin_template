@@ -21,6 +21,7 @@ const viteConfig = ({ mode, command }: ConfigEnv): UserConfig => {
     '/@': pathResolve('./src/'),
   }
   return {
+    base: './',
     plugins: createVitePlugins(env, command === 'build'),
     resolve: { alias },
     server: {
