@@ -25,3 +25,5 @@ dist
 # lint cache 
 .stylelintcache
 .eslintcache
+
+report.html
