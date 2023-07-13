@@ -1,0 +1,77 @@
+@tailwind components;
+@layer components {
+  #app {
+    @apply h-full overflow-x-hidden;
+    background-color: var(--base-main-bg-color);
+  }
+  // 布局圆角阴影
+  .layout-shadow-rounded {
+    @apply rounded bg-white/75 shadow-[0_0_12px_rgba(0,0,0,.12)];
+  }
+  // 布局过滤
+  .layout-filter {
+    @apply backdrop-blur-sm;
+    background-color: var(--base-column-header-color);
+  }
+  // 头部固定
+  .layout-header-fixed {
+    @apply fixed left-0 right-0 top-0 z-10  flex h-[50px] items-center  leading-[50px];
+    border: 1px solid var(--el-border-color);
+  }
+  // 面包屑
+  .layout-tag-wrapper {
+    @apply fixed right-0 top-[50px] z-10 flex  h-[34px] border border-t-0;
+    border: 1px solid var(--el-border-color);
+    border-top: 0;
+  }
+  .layout-tag-wrapper-fullscreen {
+    @extend .layout-tag-wrapper;
+    @apply relative top-0 w-screen;
+  }
+  // 主体布局
+  .layout-main {
+    @apply box-border  pb-4 pr-4 pt-[100px];
+  }
+  .layout-main-fullscreen {
+    @extend .layout-main;
+    @apply flex-grow pl-4 pt-4;
+  }
+  // 左侧布局
+  .layout-side {
+    @apply fixed left-0 top-0 box-border h-screen  pt-[50px] transition-all;
+    .el-scrollbar {
+      background-color: var(--el-menu-bg-color);
+    }
+  }
+  // logo样式
+  .logo-link {
+    @apply flex h-full  cursor-pointer items-center px-4 transition-all;
+  }
+  // 字体隐藏
+  .text-hidden {
+    @apply overflow-hidden
+    text-ellipsis whitespace-nowrap;
+  }
+  // icon
+  .base-icon {
+    @apply inline-flex h-[1em] w-[1em] items-center justify-center overflow-hidden fill-current;
+  }
+}
+.breadcrumb {
+  margin-left: 10px;
+  white-space: nowrap;
+}
+// 滚动条
+::-webkit-scrollbar-thumb {
+  background-color: var(--base-scrollbar-thumb);
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
