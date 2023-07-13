@@ -68,6 +68,17 @@ const comps: AppRouteType[] = [
           permission: '',
         },
       },
+      {
+        path: 'json',
+        name: 'Json',
+        component: () => import('/@/views/comps/json/index.vue'),
+        meta: {
+          title: 'Json编辑器',
+          sort: 6,
+          icon: '',
+          permission: '',
+        },
+      },
     ],
   },
 ]

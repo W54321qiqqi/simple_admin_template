@@ -46,6 +46,28 @@ const func: AppRouteType[] = [
           icon: '',
         },
       },
+      {
+        path: 'drag-resize',
+        name: 'DragResize',
+        component: () => import('/@/views/func/drag-resize/index.vue'),
+        meta: {
+          title: '拖拽缩放',
+          sort: 4,
+          permission: '',
+          icon: '',
+        },
+      },
+      {
+        path: 'draggable',
+        name: 'Draggable',
+        component: () => import('/@/views/func/draggable/index.vue'),
+        meta: {
+          title: '拖拽',
+          sort: 5,
+          permission: '',
+          icon: '',
+        },
+      },
     ],
   },
 ]

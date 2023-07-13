@@ -21,7 +21,7 @@
         </el-descriptions-item>
         <el-descriptions-item label="预览地址">
           <a
-            href="https://gist006.gitee.io/vue3-basic-admin"
+            href="https://w54321qiqqi.github.io/simple_admin_template/"
             target="_blank"
             class="color-primary"
           >
@@ -30,7 +30,7 @@
         </el-descriptions-item>
         <el-descriptions-item label="github地址">
           <a
-            href="https://github.com/W54321qiqqi/V3-Template"
+            href="https://github.com/W54321qiqqi/simple_admin_template.git"
             target="_blank"
             class="color-primary"
           >
