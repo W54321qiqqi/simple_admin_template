@@ -11,6 +11,7 @@ declare module 'vue' {
     BaseBox: typeof import('./../src/components/base-box/index.vue')['default']
     BaseButton: typeof import('./../src/components/base-button/index.vue')['default']
     BaseCharts: typeof import('./../src/components/base-charts/base-charts.vue')['default']
+    BaseColumnSetting: typeof import('./../src/components/base-column-setting/base-column-setting.vue')['default']
     BaseCountTo: typeof import('./../src/components/base-count-to/index.vue')['default']
     BaseDatePicker: typeof import('./../src/components/base-date-picker/index.vue')['default']
     BaseDialog: typeof import('./../src/components/base-dialog/index.vue')['default']

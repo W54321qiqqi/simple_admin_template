@@ -12,7 +12,7 @@
         {{ item.type }}
       </el-tag>
       <div
-        class="notice-item-content ml-3 flex-auto overflow-hidden text-ellipsis whitespace-nowrap"
+        class="notice-item-content ml-3 flex-1 overflow-hidden text-ellipsis whitespace-nowrap"
       >
         {{ item.content }}
       </div>

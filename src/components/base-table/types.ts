@@ -24,7 +24,8 @@ export type Column = {
   formType?: `${FormTypeEnum}` | undefined
   active?: boolean
   sort?: number
-  callFunction?: () => boolean
+  // eslint-disable-next-line @typescript-eslint/ban-types
+  callFunction?: Function
   config?: any
   operation?: OperationType[]
   formatter?: () => void

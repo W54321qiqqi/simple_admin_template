@@ -9,7 +9,7 @@
         <base-icon :name="item.icon" size="28" v-if="index < 3" />
         <div v-else class="w-7 text-center">{{ index + 1 }}</div>
       </div>
-      <div class="ml-5 flex-auto">
+      <div class="ml-5 flex-1">
         <div class="flex items-center justify-between">
           <span>{{ item.name }}</span>
           <span class="dynamic-item-time">

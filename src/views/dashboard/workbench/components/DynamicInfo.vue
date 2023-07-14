@@ -9,7 +9,7 @@
       :key="index"
     >
       <el-avatar :size="48" :src="item.headImg" class="dynamic-head mr-4" />
-      <div class="dynamic-item-main flex-auto">
+      <div class="dynamic-item-main flex-1">
         <div>
           <span class="dynamic-item-name">{{ item.name }}</span>
           <span class="dynamic-item-remark">{{ item.remark }}</span>

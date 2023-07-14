@@ -5,7 +5,7 @@
     "
     class="layout-filter"
   >
-    <div class="tag-view-content flex flex-auto">
+    <div class="tag-view-content flex flex-1">
       <!-- 左箭头 -->
       <base-icon
         :name="leftIcon"
@@ -15,7 +15,7 @@
         @click="handleScroll(number)"
       />
       <div
-        class="scroll-outer flex-auto"
+        class="scroll-outer flex-1"
         :class="{ 'no-arrow': !initArrow }"
         ref="scrollOuterRef"
         @mousewheel="handleMouseWheel"

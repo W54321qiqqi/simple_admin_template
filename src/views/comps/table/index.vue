@@ -37,6 +37,12 @@
     </base-box>
 
     <base-box title="列字段配置">
+      <template #extra>
+        <base-column-setting
+          v-model:table-columns="table3Config.columns"
+          :show-filter="false"
+        />
+      </template>
       <base-table
         :columns="table3Config.columns"
         :data="tableData2"

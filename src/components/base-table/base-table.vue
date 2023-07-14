@@ -64,7 +64,6 @@
                 v-model="scope.row[item.fieldName]"
                 :active-value="1"
                 :inactive-value="0"
-                :before-change="item?.callFunction?.bind(null, scope.row)"
               />
             </template>
             <template v-else-if="item.formType === FormTypeEnum.OPERATION">
