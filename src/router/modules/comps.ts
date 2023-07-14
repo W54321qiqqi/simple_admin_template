@@ -65,18 +65,7 @@ const comps: AppRouteType[] = [
           title: 'form',
           sort: 5,
           icon: '',
-          permission: '',
-        },
-      },
-      {
-        path: 'json',
-        name: 'Json',
-        component: () => import('/@/views/comps/json/index.vue'),
-        meta: {
-          title: 'Json编辑器',
-          sort: 6,
-          icon: '',
-          permission: '',
+          permission: 'admin_components_form',
         },
       },
       {
@@ -85,9 +74,20 @@ const comps: AppRouteType[] = [
         component: () => import('/@/views/comps/table/index.vue'),
         meta: {
           title: 'Table',
-          sort: 7,
-          permission: '',
+          sort: 6,
+          permission: 'admin_components_table',
           icon: '',
+        },
+      },
+      {
+        path: 'json',
+        name: 'Json',
+        component: () => import('/@/views/comps/json/index.vue'),
+        meta: {
+          title: 'Json编辑器',
+          sort: 7,
+          icon: '',
+          permission: 'admin_components_json',
         },
       },
     ],

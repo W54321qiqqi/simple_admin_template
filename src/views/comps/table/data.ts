@@ -69,22 +69,14 @@ export const TableColumn2: Column[] = [
     fixed: 'right',
     operation: [
       {
-        icon: 'edit',
+        icon: 'el-icon-Edit',
         label: '编辑',
         callFunction: () => {},
       },
       {
-        icon: 'delete',
+        icon: 'el-icon-Delete',
         label: '删除',
         confirm: true,
-        callFunction: () => {},
-      },
-      {
-        label: '新增',
-        callFunction: () => {},
-      },
-      {
-        label: '修改',
         callFunction: () => {},
       },
     ],

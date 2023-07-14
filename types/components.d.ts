@@ -23,7 +23,6 @@ declare module 'vue' {
     BaseJson: typeof import('./../src/components/base-json/index.vue')['default']
     BaseLoading: typeof import('./../src/components/base-loading/index.vue')['default']
     BasePage: typeof import('./../src/components/base-page/index.vue')['default']
-    BasePageTable: typeof import('./../src/components/base-page-table/index.vue')['default']
     BasePagination: typeof import('./../src/components/base-pagination/base-pagination.vue')['default']
     BaseResult: typeof import('./../src/components/base-result/index.vue')['default']
     BaseSeamScroll: typeof import('./../src/components/base-seamscroll/src/base-seam-scroll.vue')['default']

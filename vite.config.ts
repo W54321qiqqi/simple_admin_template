@@ -29,7 +29,7 @@ const viteConfig = ({ mode, command }: ConfigEnv): UserConfig => {
     },
     build: {
       reportCompressedSize: false,
-      chunkSizeWarningLimit: 2000,
+      chunkSizeWarningLimit: 5000,
       rollupOptions: {
         // 静态资源分类打包
         output: {

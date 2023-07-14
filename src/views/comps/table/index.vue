@@ -61,7 +61,9 @@
 
 <script lang="ts" setup>
 import { TableColumn, TableColumn2, TableCheckList } from './data'
-
+const BaseTable = defineAsyncComponent(
+  () => import('/@/components/base-table/base-table.vue'),
+)
 const tableData = ref([
   {
     id: '123',

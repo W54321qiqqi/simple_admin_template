@@ -63,6 +63,26 @@
     "useRouter": true,
     "useStore": true,
     "watch": true,
-    "watchEffect": true
+    "watchEffect": true,
+    "Component": true,
+    "ComponentPublicInstance": true,
+    "ComputedRef": true,
+    "InjectionKey": true,
+    "PropType": true,
+    "Ref": true,
+    "VNode": true,
+    "acceptHMRUpdate": true,
+    "createPinia": true,
+    "defineStore": true,
+    "getActivePinia": true,
+    "mapStores": true,
+    "mapWritableState": true,
+    "setActivePinia": true,
+    "setMapStoreSuffix": true,
+    "storeToRefs": true,
+    "toValue": true,
+    "useSlots": true,
+    "watchPostEffect": true,
+    "watchSyncEffect": true
   }
 }

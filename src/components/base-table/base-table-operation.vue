@@ -24,7 +24,6 @@ export default defineComponent({
         </base-button>
       )
     }
-
     const renderConfirmButton = (item: any) => {
       return (
         <el-popconfirm
@@ -37,45 +36,15 @@ export default defineComponent({
         </el-popconfirm>
       )
     }
-
-    const renderDropMenu = () => {
-      const extraOperation = props.operation?.slice(2)
-      return (
-        <el-dropdown-menu>
-          {extraOperation?.map((item) => (
-            <el-dropdown-item>{renderButton(item)}</el-dropdown-item>
-          ))}
-        </el-dropdown-menu>
-      )
-    }
-
     return () => {
-      const defaultOperation = props.operation?.slice(0, 2).map((item) => {
+      const defaultOperation = props.operation!.map((item) => {
         return item.confirm ? renderConfirmButton(item) : renderButton(item)
       })
-      const moreOperation =
-        props.operation!.length > 2
-          ? [
-              <el-dropdown
-                v-slots={{
-                  dropdown: () => renderDropMenu(),
-                }}
-              >
-                <base-icon
-                  name="local-more"
-                  class="pointer more-icon"
-                  size="20"
-                />
-              </el-dropdown>,
-            ]
-          : []
-
-      return <el-space>{defaultOperation?.concat(moreOperation)}</el-space>
+      return <el-space>{defaultOperation}</el-space>
     }
   },
 })
 </script>
-
 <style scoped>
 .more-icon {
   color: var(--el-color-primary);
