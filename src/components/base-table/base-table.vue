@@ -68,23 +68,6 @@
               />
             </template>
             <template v-else-if="item.formType === FormTypeEnum.OPERATION">
-              <!-- <el-dropdown>
-                <span class="el-dropdown-link">
-                  Dropdown List
-                  <el-icon class="el-icon--right">
-                    <arrow-down />
-                  </el-icon>
-                </span>
-                <template #dropdown>
-                  <el-dropdown-menu>
-                    <el-dropdown-item>Action 1</el-dropdown-item>
-                    <el-dropdown-item>Action 2</el-dropdown-item>
-                    <el-dropdown-item>Action 3</el-dropdown-item>
-                    <el-dropdown-item disabled>Action 4</el-dropdown-item>
-                    <el-dropdown-item divided>Action 5</el-dropdown-item>
-                  </el-dropdown-menu>
-                </template>
-              </el-dropdown> -->
               <base-table-operation
                 :operation="item.operation"
                 :scope="scope"
@@ -131,7 +114,6 @@ import { FormTypeEnum, componentMap } from '/@/enums/componentEnum'
 import { isUndefined, isFunction } from '/@/utils/is'
 import { omit } from '/@/utils/common'
 const props = defineProps(tableProps)
-// import { ElDropdown, ElDropdownItem, ElDropdownMenu } from 'element-plus'
 const emit = defineEmits(['selectable', 'pagination-change'])
 
 const attrs = useAttrs()
