@@ -79,6 +79,17 @@ const comps: AppRouteType[] = [
           permission: '',
         },
       },
+      {
+        path: 'table',
+        name: 'Table',
+        component: () => import('/@/views/comps/table/index.vue'),
+        meta: {
+          title: 'Table',
+          sort: 7,
+          permission: '',
+          icon: '',
+        },
+      },
     ],
   },
 ]

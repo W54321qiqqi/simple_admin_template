@@ -5,11 +5,8 @@
     ref="baseBoxRef"
   >
     <div class="base-box-header" v-if="title || $slots.title">
-      <div class="flex-row-center justify-between">
-        <div
-          class="base-box-title flex-row-center flex items-center"
-          v-if="!$slots.title"
-        >
+      <div class="flex items-center justify-between">
+        <div class="base-box-title flex items-center" v-if="!$slots.title">
           {{ title }}
           <el-tooltip
             effect="dark"
